@@ -10,7 +10,11 @@ public class FundsTransferApp {
 		FundsTransfer fundsTransferRef =new Citi();//new Chase();//new WellsFargo();
 		//B.L
 		fundsTransferRef.doTransfer("34545","45656",12345);
-	}{
+		
+		if(fundsTransferRef instanceof NationalBank){
+			System.out.println(" NationalBank Logic:::::");
+		}
+	}else{
 		System.out.println("Invalid params please pass which payment gateway you would like to use...");
 	}
 	

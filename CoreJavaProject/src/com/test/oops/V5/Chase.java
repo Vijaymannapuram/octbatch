@@ -1,6 +1,8 @@
 package com.test.oops.V5;
 
-public class Chase implements FundsTransfer{
+import java.io.Serializable;
+
+public class Chase implements FundsTransfer,NationalBank,Serializable{
 
 	@Override
 	public void doTransfer(String srcAccount, String destAccount, int amount) {

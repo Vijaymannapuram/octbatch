@@ -1,6 +1,6 @@
 package com.test.oops.V5;
 
-public class WellsFargo implements FundsTransfer{
+public class WellsFargo implements FundsTransfer,NationalBank{
 
 	@Override
 	public void doTransfer(String srcAccount, String destAccount, int amount) {
